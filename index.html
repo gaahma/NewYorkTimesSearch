@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>New York Times Application</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <script type="text/javascript" src="assets/javascript/nytimesSearch.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Search Criteria</h1>
+
+    <!-- We'll be dumping our JSON contents in here -->
+    <div id="Article"></div>
+
+    <!-- This form will be where users input data about the movies -->
+    <form id="article-form">
+      <label for="Search-Term-input">Search Term</label>
+      <input type="text" id="search-Term-input">
+
+      <br>
+
+      <label for="Search-Term-input">Number of Records to Retrieve</label>
+      <input type="text" id="records-num">
+
+      <br>
+
+      <label for="Search-Term-input">Start Year</label>
+      <input type="text" id="start-year-input">
+
+      <br>
+
+            <label for="Search-Term-input">End Year</label>
+      <input type="text" id="end-year-input"><br>
+
+      <!-- This button will trigger our AJAX call -->
+      <input id="search-article" type="submit" value="Article Search">
+    </form>
