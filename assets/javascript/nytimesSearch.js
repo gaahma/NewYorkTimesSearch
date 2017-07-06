@@ -9,6 +9,15 @@ $(document).ready(function(){
 		console.log({search, number, startYear, endYear});
 	});
 
+  //var apiKey = "82d4d94e8b09420888768ec26d85461e";
+  var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+  queryURL += '?' + $.param({
+    'api-key': "82d4d94e8b09420888768ec26d85461e",
+    'search': "h",
+    'startYear': "",
+    'endYear': ""
+  });
+
 
   $.ajax({
     url: queryURL,
@@ -21,8 +30,8 @@ $(document).ready(function(){
     var results = response.data;
 
 
-
-
-  })
+  }).fail(function(err) {
+    throw err;
+  });
 
 });
