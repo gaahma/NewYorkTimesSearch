@@ -29,7 +29,7 @@
    <div class="row">
           <div class="col-md-12 jumbotron" style="background-color : #191970">
           <div class="text center">
-            <h1 style="text-align: center; color:white; font-style: italic">Search Criteria</h1>
+            <h1 style="text-align: center; color:white; font-style: italic">New York Times - Search</h1>
           </div>
     </div>
 
@@ -40,21 +40,25 @@
     <div id="Article"></div>
 
     <form id="article-form">
-      <label for="Search-Term-input">Search Term</label></form>
+      <label for="Search-Term-input">Search Term</label><br></form>
       <input type="text" id="search-Term-input"></br>
 
-    
 
-      <label for="Search-Term-input">Number of Records to Retrieve</label></form>
+      <label for="Search-Term-input">Number of Records to Retrieve</label><br></form>
       <input type="text" id="records-num"><br>
 
-      <label for="Search-Term-input">Start Year</label></form>
+      <label for="Search-Term-input">Start Year</label><br></form>
       <input type="text" id="start-year-input"><br>
 
-      <label for="Search-Term-input">End Year</label>
+      <label for="Search-Term-input">End Year</label><br>
       <input type="text" id="end-year-input"><br>
-
+      
+      <br>
       <!-- This button will trigger our AJAX call -->
       <input id="search-article" type="submit" value="Article Search">
       <input id="clear Results" type="submit" value="Article Search">
     </form>
+
+<div id="articles-found"></div>
+
+</body>
