@@ -6,35 +6,52 @@
   <title>New York Times Application</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <script type="text/javascript" src="assets/javascript/nytimesSearch.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+      <!-- Optional theme -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+      <!-- Latest compiled and minified JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+
 </head>
 
 <body>
   <div class="container">
-    <h1>Search Criteria</h1>
+   <div class="row">
+          <div class="col-md-12 jumbotron" style="background-color : #191970">
+          <div class="text center">
+            <h1 style="text-align: center; color:white; font-style: italic">Search Criteria</h1>
+          </div>
+    </div>
+
+  <div class="container">
+         <div class="row">
+          <div class="col-med-12 jumbotron">     
 
     <!-- We'll be dumping our JSON contents in here -->
     <div id="Article"></div>
 
     <!-- This form will be where users input data about the movies -->
     <form id="article-form">
-      <label for="Search-Term-input">Search Term</label>
-      <input type="text" id="search-Term-input">
+      <label for="Search-Term-input">Search Term</label></form>
+      <input type="text" id="search-Term-input"></br>
 
-      <br>
+    
 
-      <label for="Search-Term-input">Number of Records to Retrieve</label>
-      <input type="text" id="records-num">
+      <label for="Search-Term-input">Number of Records to Retrieve</label></form>
+      <input type="text" id="records-num"><br>
 
-      <br>
+      <label for="Search-Term-input">Start Year</label></form>
+      <input type="text" id="start-year-input"><br>
 
-      <label for="Search-Term-input">Start Year</label>
-      <input type="text" id="start-year-input">
-
-      <br>
-
-            <label for="Search-Term-input">End Year</label>
+      <label for="Search-Term-input">End Year</label>
       <input type="text" id="end-year-input"><br>
 
       <!-- This button will trigger our AJAX call -->
       <input id="search-article" type="submit" value="Article Search">
+      <input id="clear Results" type="submit" value="Article Search">
     </form>
